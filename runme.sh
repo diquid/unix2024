@@ -3,22 +3,21 @@
 FILE="shared_file.txt"
 STATS="stats.txt"
 
-# Проверяем, существует ли файл stats.txt
 if [ ! -f "$STATS" ]; then
     touch "$STATS"
 fi
 
-# Сохраняем время начала выполнения скрипта
 start_time=$(date +%s)
 
-# Запускаем 10 параллельных задач
+task_runtime=$((5 * 60))
+
 for i in {1..10}; do
   (
     LOCK_COUNT=0
+    end_time=$((start_time + task_runtime))
     while true; do
-      # Проверяем, не истекло ли 30 секунд с момента начала выполнения задачи
       current_time=$(date +%s)
-      if ((current_time - start_time >= 30)); then
+      if ((current_time >= end_time)); then
         break
       fi
       
@@ -28,14 +27,4 @@ for i in {1..10}; do
     echo "$LOCK_COUNT" >> "$STATS"
   ) &
   
-  # Ограничиваем количество параллельно запускаемых задач
-  if [ $(jobs -p | wc -l) -ge 10 ]; then
-    wait -n
-  fi
-done
-
-# Ожидаем завершения всех дочерних процессов
-wait
-
-# Выводим содержимое файла stats.txt
-cat "$STATS"
+  if [ $(jobs -p | wc
