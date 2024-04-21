@@ -1,0 +1,47 @@
+PID: 14044, Lock count: 1
+PID: 14086, Lock count: 1
+PID: 14056, Lock count: 1
+PID: 14143, Lock count: 1
+PID: 14168, Lock count: 1
+PID: 14217, Lock count: 1
+PID: 14080, Lock count: 1
+PID: 14050, Lock count: 1
+PID: 14289, Lock count: 1
+PID: 14068, Lock count: 1
+PID: 14241, Lock count: 1
+PID: 14361, Lock count: 1
+PID: 14384, Lock count: 1
+PID: 14265, Lock count: 1
+PID: 14433, Lock count: 1
+PID: 14456, Lock count: 1
+PID: 14480, Lock count: 1
+PID: 14503, Lock count: 1
+PID: 14193, Lock count: 1
+PID: 14551, Lock count: 1
+PID: 14062, Lock count: 1
+PID: 14098, Lock count: 1
+PID: 14074, Lock count: 1
+PID: 14647, Lock count: 1
+PID: 14671, Lock count: 1
+PID: 14312, Lock count: 1
+PID: 14599, Lock count: 1
+PID: 14409, Lock count: 1
+PID: 14767, Lock count: 1
+3
+PID: 14528, Lock count: 1
+9
+PID: 14336, Lock count: 1
+7
+3
+PID: 14575, Lock count: 1
+PID: 14743, Lock count: 1
+3
+PID: 14695, Lock count: 1
+3
+3
+PID: 14092, Lock count: 1
+PID: 14719, Lock count: 1
+1
+3
+PID: 14623, Lock count: 1
+2
