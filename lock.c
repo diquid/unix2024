@@ -44,14 +44,12 @@ int main(int argc, char *argv[]) {
 
     printf("Removing lock file %s, owned by PID %s\n", lockfile, read_pid);
 
-    // Открываем файл для записи статистики
     FILE *stats_file = fopen("stats.txt", "a");
     if (stats_file == NULL) {
         perror("Failed to open stats.txt for appending");
         return 1;
     }
     
-    // Записываем PID и количество блокировок
     fprintf(stats_file, "PID: %s, Lock count: 1\n", pid_str);
     fclose(stats_file);
 
